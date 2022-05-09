@@ -1,6 +1,8 @@
-myusers:
-   - name: ravi
-     uid: 1010
-     first: ravi
-     last: sharma
-     middle: exam
+---
+- hosts: all
+  tasks:
+    - name: copy
+      copy:
+        src: /etc/passwd
+        dest: /tmp
+
